@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://struts.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/layout/layout.jsp">
+        <put-attribute name="title" value="page.title.common" />
+    </definition>
+    <!--report register fail-->
+    <definition name="listCustomer.page" extends="base.definition">
+        <put-attribute name="title" value="page.title.list-customer" />
+        <put-attribute name="content" value="/pages/customer2.jsp" />
+        <put-attribute name="jsContent" value="/pages/customer-js.jsp" />
+<!--        <put-attribute name="jsContent" value="/WEB-INF/jsp/pages/arct/reportRegisterFail-js.jsp" />-->
+    </definition>
+
+    <definition name="cusDetail.page" extends="base.definition">
+        <put-attribute name="title" value="page.title.cus-detail" />
+        <put-attribute name="content" value="/pages/customerdetail.jsp" />
+        <put-attribute name="jsContent" value="/pages/customerdetail-js.jsp" />
+    </definition>
+     <!--add customer-->
+    <definition name="addCustomer.page" extends="base.definition">
+        <put-attribute name="title" value="page.title.add-customer" />
+        <put-attribute name="content" value="/pages/customer.jsp" />
+<!--        <put-attribute name="jsContent" value="/pages/customer-js.jsp" />-->
+    </definition>
+</tiles-definitions>
